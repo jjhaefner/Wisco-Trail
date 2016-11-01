@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
 public class OptionsScreen extends AppCompatActivity {
 
@@ -15,7 +14,7 @@ public class OptionsScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_options_screen);
 
-        Button tx0 = (Button)findViewById(R.id.TravelTheTrailBtn);
+        Button tx0 = (Button)findViewById(R.id.newGame);
         Button tx1 = (Button)findViewById(R.id.LearnAboutTheTrailBtn);
         Button tx2 = (Button)findViewById(R.id.EndBtn);
         Button tx3 = (Button)findViewById(R.id.ChooseManagementOptionsBtn);
@@ -39,17 +38,11 @@ public class OptionsScreen extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void topTen(View view){
-        Intent intent = new Intent(this, TopTen.class);
-        startActivity(intent);
-    }
 
-    public void turnSoundOff(View view){
-        Intent intent = new Intent(this, ToggleSound.class);
-        startActivity(intent);
-    }
 
-    public void gotoOptions(View view){
+
+
+    public void managementOptions(View view){
         Intent intent = new Intent(this, ManagementOptions.class);
         startActivity(intent);
     }

@@ -2,10 +2,10 @@ package edu.wisc.ece.project454;
 
 import android.content.Intent;
 import android.graphics.Typeface;
-import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.TextView;
+import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,32 +16,38 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView tx = (TextView)findViewById(R.id.appTitle);
+        Button tx0 = (Button)findViewById(R.id.newGame);
+        Button tx1 = (Button)findViewById(R.id.loadGame);
+        Button tx2 = (Button)findViewById(R.id.EndBtn);
+        Button tx3 = (Button)findViewById(R.id.LearnAboutTheTrailBtn);
+
         Typeface custom_font = Typeface.createFromAsset(getAssets(),  "fonts/PressStart2P.ttf");
-        tx.setTypeface(custom_font);
 
-        waitAndGoToOptionsMenu();
+        tx0.setTypeface(custom_font);
+        tx1.setTypeface(custom_font);
+        tx2.setTypeface(custom_font);
+        tx3.setTypeface(custom_font);
+
     }
 
-    private void waitAndGoToOptionsMenu(){
-        Intent intent = new Intent(this, OptionsScreen.class);
-        SystemClock.sleep(3000);
+    public void startTrail(View view){
+        Intent intent = new Intent(this, StartTrail.class);
         startActivity(intent);
-
     }
 
-    private void DisplayAppOpening(){
+    public void learnAboutTrail(View view){
+        Intent intent = new Intent(this, TrailInfo.class);
+        startActivity(intent);
+    }
 
-        TextView basicTextView = (TextView) findViewById(R.id.dotDotDot);
+    public void goToMainScreen(View view){
+        Intent intent = new Intent(this, MainScreen.class);
+        startActivity(intent);
+    }
 
-        while(true) {
-            basicTextView.setText(".  ");
-            SystemClock.sleep(500);
-            basicTextView.setText(" . ");
-            SystemClock.sleep(500);
-            basicTextView.setText("  .");
-            SystemClock.sleep(500);
-        }
+    public void endGame(View view){
+        //end game, quit all activities
+        System.exit(1);
     }
 }
 
