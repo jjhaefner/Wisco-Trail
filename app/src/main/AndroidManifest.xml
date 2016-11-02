@@ -2,7 +2,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="edu.wisc.ece.project454">
 
+    <activity
+        android:name=".SplashActivity"
+        android:theme="@style/SplashTheme">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
 
     <application
         android:allowBackup="true"
@@ -26,9 +34,10 @@
         <activity android:name=".ToggleSound" />
         <activity android:name=".ManagementOptions" />
         <activity android:name=".PickLeader" />
-        <activity android:name=".MainScreen"/>
+        <activity android:name=".MainScreen" />
+        <activity android:name=".PickParty" />
+        <activity android:name=".FarmNFleet" />
+        <activity android:name=".DepartureMonth"></activity>
     </application>
 
-
-
-</manifest>
+/manifest>
