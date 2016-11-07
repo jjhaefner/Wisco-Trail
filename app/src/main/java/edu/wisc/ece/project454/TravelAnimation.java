@@ -15,6 +15,11 @@ public class TravelAnimation extends AppCompatActivity {
         MainScreen.milestoneSet = false;
 
         //TODO: calculate and save variables
+
+        UserVars.mileage += 10; //TODO: factor in pace variable
+        UserVars.date += 1;
+
+
         //TODO: random event generator!!!
     }
 

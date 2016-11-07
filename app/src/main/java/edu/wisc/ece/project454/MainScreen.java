@@ -5,11 +5,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import android.widget.TextView;
+
+
 public class MainScreen extends AppCompatActivity {
 
-
-    private int mileage = 0;
     public static Boolean milestoneSet = false;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +20,9 @@ public class MainScreen extends AppCompatActivity {
         setContentView(R.layout.activity_main_screen);
 
         if(!milestoneSet) {
-            switch (mileage) {
+
+            switch (UserVars.mileage) {
+
                 case 0: {
                     Intent intent = new Intent(this, Minneapolis.class);
                     startActivity(intent);
@@ -77,8 +82,13 @@ public class MainScreen extends AppCompatActivity {
                     milestoneSet = true;
                 }
 
-            }
-        }
+
+            } //end case stmt
+        } //end if stmt for milestone-already-set
+
+        TextView dateTV = (TextView)findViewById(R.id.date_field);
+
+
 
     }
 

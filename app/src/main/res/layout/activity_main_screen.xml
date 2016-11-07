@@ -137,6 +137,7 @@
         android:layout_width="375dp"
         android:onClick="travelSettings"/>
 
+
     <Button
         android:text="Continue on!"
         android:layout_width="350dp"
@@ -147,6 +148,7 @@
         android:layout_alignParentEnd="true"
         android:layout_height="65dp"
         android:onClick="continueOn"/>
+
 
     <TextView
         android:text="TextView"
@@ -212,4 +214,6 @@
         android:layout_toRightOf="@+id/textView40"
         android:layout_toEndOf="@+id/textView40"
         android:id="@+id/money_field" />
+
+
 </RelativeLayout>
