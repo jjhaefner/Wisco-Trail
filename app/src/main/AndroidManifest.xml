@@ -2,15 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="edu.wisc.ece.project454">
 
-    <activity
-        android:name=".SplashActivity"
-        android:theme="@style/SplashTheme">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-    </activity>
 
     <application
         android:allowBackup="true"
@@ -27,6 +18,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity"/>
         <activity android:name=".StartTrail" />
         <activity android:name=".TrailInfo" />
         <activity android:name=".ToggleSound" />
@@ -53,7 +45,7 @@
         <activity android:name=".TravelSettings" />
         <activity android:name=".Trade" />
         <activity android:name=".EndGame" />
-        <activity android:name=".TrailInfo1"></activity>
+        <activity android:name=".TrailInfo1"/>
     </application>
 
-/manifest>
+</manifest>
