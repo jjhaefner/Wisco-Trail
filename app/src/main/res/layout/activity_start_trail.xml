@@ -45,7 +45,8 @@
         android:layout_alignLeft="@+id/textView1"
         android:layout_alignStart="@+id/textView1"
         android:layout_marginTop="20dp"
-        android:id="@+id/button2" />
+        android:id="@+id/button2"
+        android:onClick="beABanker"/>
 
     <Button
         android:text="Be a carpenter from Ohio"
@@ -56,7 +57,8 @@
         android:id="@+id/button3"
         android:layout_below="@+id/button2"
         android:layout_alignLeft="@+id/button2"
-        android:layout_alignStart="@+id/button2" />
+        android:layout_alignStart="@+id/button2"
+        android:onClick="beACarpenter"/>
 
     <Button
         android:text="Be a farmer from Illinois"
@@ -67,7 +69,8 @@
         android:id="@+id/button4"
         android:layout_below="@+id/button3"
         android:layout_alignLeft="@+id/button3"
-        android:layout_alignStart="@+id/button3" />
+        android:layout_alignStart="@+id/button3"
+        android:onClick="beAFarmer"/>
 
     <Button
         android:text="Find out the differences \nbetween these options"

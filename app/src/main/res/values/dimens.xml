@@ -4,4 +4,6 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="menuBtnWidth">260dp</dimen>
     <dimen name="menuBtnHeight">35dp</dimen>
+    <dimen name="storeNumWidth">100dp</dimen>
+    <dimen name="storeNumHeight">40dp</dimen>
 </resources>

@@ -27,8 +27,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".OptionsScreen" />
         <activity android:name=".StartTrail" />
         <activity android:name=".TrailInfo" />
         <activity android:name=".ToggleSound" />
@@ -37,7 +35,25 @@
         <activity android:name=".MainScreen" />
         <activity android:name=".PickParty" />
         <activity android:name=".FarmNFleet" />
-        <activity android:name=".DepartureMonth"></activity>
+        <activity android:name=".DepartureMonth" />
+        <activity android:name=".Shop" />
+        <activity android:name=".Minneapolis" />
+        <activity android:name=".MississippiRiver" />
+        <activity android:name=".EauClaire" />
+        <activity android:name=".DevilsLake" />
+        <activity android:name=".Madison" />
+        <activity android:name=".WisconsinRiver" />
+        <activity android:name=".NewGlarus" />
+        <activity android:name=".RockRiver" />
+        <activity android:name=".Milwaukee" />
+        <activity android:name=".Sheboygan" />
+        <activity android:name=".GreenBay" />
+        <activity android:name=".TravelAnimation" />
+        <activity android:name=".Hunt" />
+        <activity android:name=".TravelSettings" />
+        <activity android:name=".Trade" />
+        <activity android:name=".EndGame" />
+        <activity android:name=".TrailInfo1"></activity>
     </application>
 
 /manifest>
